@@ -1,15 +1,5 @@
 
-The error you're encountering is due to a missing import for `TavilyTools`. You need to import `TavilyTools` from the appropriate module. Based on the naming, it likely belongs to the `tavily` package.
 
-Add the following import statement to your `App.py` file:
-
-```python
-from tavily import TavilyTools
-```
-
-The modified `App.py` file should look like this:
-
-```python
 import streamlit as st
 import os
 import tavily
@@ -125,6 +115,5 @@ if __name__ == "__main__":
         initial_sidebar_state="collapsed"
     )
     main()
-```
 
-This should resolve the error you are encountering.
+
