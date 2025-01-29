@@ -9,8 +9,9 @@ from phi.agent import Agent
 from phi.model.google import Gemini
 from transformers import pipeline  # For Whisper integration
 from tempfile import NamedTemporaryFile
+from phi.tools.tavily import TavilyTools
 from constants import SYSTEM_PROMPT, INSTRUCTIONS
-from tavily import TavilyTools  # Add this line
+#from tavily import TavilyTools  # Add this line
 
 # Configuration: Replace with your actual API keys
 os.environ['GOOGLE_API_KEY'] = st.secrets.get('GEMINI_KEY')
